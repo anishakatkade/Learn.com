@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CSS Notes</title>
+</head>
+<body>
+    <div>
+        <nav class="py-4 flex justify-between items-center bg-blue-950 text-white">
+            <h1 class="px-4 font-bold font-serif text-2xl">learn.com</h1>
+            <div class="flex cursor-pointer space-x-10 px-28 rounded-md">
+                <a href="#introduction" class="hover:underline">Introduction</a>
+                <a href="#selectors" class="hover:underline">Selectors</a>
+                <a href="#box-model" class="hover:underline">Box Model</a>
+                <a href="#flexbox" class="hover:underline">Flexbox</a>
+                <a href="#grid" class="hover:underline">Grid</a>
+                <a href="#bookmarks" class="hover:underline">My Bookmarks</a>
+            </div>
+        </nav>
+
+    
+        <div class="container mx-auto p-5">
+            <
+            <div id="introduction" class="mb-8">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-3xl font-bold mb-5">Introduction to CSS</h1>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors" onclick="bookmarkSection('introduction')">
+                        Bookmark
+                    </button>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="mt-2">
+                        CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the visual presentation of HTML elements.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Key Concepts:</strong> Selectors, Box Model, Flexbox, Grid, and Responsive Design.
+                    </p>
+                </div>
+            </div>
+
+          
+            <div id="selectors" class="mb-8">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-3xl font-bold mb-5">CSS Selectors</h1>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors" onclick="bookmarkSection('selectors')">
+                        Bookmark
+                    </button>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="mt-2">
+                        CSS selectors are used to target HTML elements for styling. They can be based on element names, classes, IDs, or attributes.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Common Selectors:</strong> Element (e.g., <code>p</code>), Class (e.g., <code>.class</code>), ID (e.g., <code>#id</code>), and Attribute (e.g., <code>[type="text"]</code>).
+                    </p>
+                </div>
+            </div>
+
+          
+            <div id="box-model" class="mb-8">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-3xl font-bold mb-5">CSS Box Model</h1>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors" onclick="bookmarkSection('box-model')">
+                        Bookmark
+                    </button>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="mt-2">
+                        The CSS Box Model describes the design and layout of elements. It consists of content, padding, border, and margin.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Components:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><strong>Content:</strong> The actual content of the element.</li>
+                            <li><strong>Padding:</strong> Space between the content and the border.</li>
+                            <li><strong>Border:</strong> A border around the padding.</li>
+                            <li><strong>Margin:</strong> Space outside the border.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+          
+            <div id="flexbox" class="mb-8">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-3xl font-bold mb-5">CSS Flexbox</h1>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors" onclick="bookmarkSection('flexbox')">
+                        Bookmark
+                    </button>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="mt-2">
+                        Flexbox is a layout model that allows you to design flexible and responsive layouts. It works with a container and its child items.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Key Properties:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><code>display: flex;</code></li>
+                            <li><code>flex-direction</code></li>
+                            <li><code>justify-content</code></li>
+                            <li><code>align-items</code></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        
+            <div id="grid" class="mb-8">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-3xl font-bold mb-5">CSS Grid</h1>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition-colors" onclick="bookmarkSection('grid')">
+                        Bookmark
+                    </button>
+                </div>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <p class="mt-2">
+                        CSS Grid is a powerful layout system for creating two-dimensional layouts. It uses rows and columns to structure content.
+                    </p>
+                    <p class="mt-2">
+                        <strong>Key Properties:</strong>
+                        <ul class="list-disc pl-5 mt-2">
+                            <li><code>display: grid;</code></li>
+                            <li><code>grid-template-columns</code></li>
+                            <li><code>grid-template-rows</code></li>
+                            <li><code>gap</code></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div id="bookmarks" class="mb-8">
+                <h1 class="text-3xl font-bold mb-5">My Bookmarks</h1>
+                <div class="bg-gray-100 p-4 rounded-lg">
+                    <ul id="bookmark-list" class="list-disc pl-5">
+                   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+        function bookmarkSection(sectionId) {
+            let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+            if (!bookmarks.includes(sectionId)) {
+                bookmarks.push(sectionId);
+                localStorage.setItem('bookmarks', JSON.stringify(bookmarks));
+                alert(`Bookmarked: ${sectionId}`);
+                displayBookmarks();
+            } else {
+                alert('Already bookmarked!');
+            }
+        }
+
+        
+        function displayBookmarks() {
+            let bookmarks = JSON.parse(localStorage.getItem('bookmarks')) || [];
+            let bookmarkList = document.getElementById('bookmark-list');
+            bookmarkList.innerHTML = ''; 
+
+            bookmarks.forEach(sectionId => {
+                let listItem = document.createElement('li');
+                let link = document.createElement('a');
+                link.href = `#${sectionId}`;
+                link.textContent = sectionId.replace(/-/g, ' '); 
+                link.className = 'text-blue-600 hover:underline';
+                listItem.appendChild(link);
+                bookmarkList.appendChild(listItem);
+            });
+        }
+
+       
+        window.onload = displayBookmarks;
+    </script>
+</body>
+</html>

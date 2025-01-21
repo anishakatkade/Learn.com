@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DSA Notes</title>
+    <style>
+      .bookmark-btn {
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.375rem;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .bookmark-btn:hover {
+        background-color: #2563eb;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Menu Bar -->
+      <nav
+        class="py-4 flex justify-between items-center bg-blue-950 text-white"
+      >
+        <h1 class="px-4 font-bold font-serif text-2xl">learn.com</h1>
+        <div class="flex cursor-pointer space-x-10 px-28 rounded-md">
+          <a href="#introduction" class="hover:underline">Introduction</a>
+          <a href="#arrays" class="hover:underline">Arrays</a>
+          <a href="#linked-lists" class="hover:underline">Linked Lists</a>
+          <a href="#sorting" class="hover:underline">Sorting</a>
+          <a href="#stacks-queues" class="hover:underline">Stacks & Queues</a>
+          <a href="#trees" class="hover:underline">Trees</a>
+          <a href="#graphs" class="hover:underline">Graphs</a>
+          <a href="#bookmarks" class="hover:underline">My Bookmarks</a>
+        </div>
+      </nav>
+
+      <div class="container mx-auto p-5">
+        <!-- Introduction to DSA -->
+        <div id="introduction" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal mb-5 text-green-900">
+              Introduction to Data Structures and Algorithms (DSA)
+            </h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('introduction')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              Data Structures and Algorithms (DSA) are the foundation of
+              computer science. They help in organizing data efficiently and
+              solving complex problems with optimal solutions. Understanding DSA
+              is crucial for writing efficient and scalable code.
+            </p>
+            <p class="mt-2">
+              <strong>Key Concepts:</strong> Time Complexity, Space Complexity,
+              Big-O Notation, Recursion, and Problem-Solving Techniques.
+            </p>
+          </div>
+        </div>
+
+        <!-- Arrays -->
+        <div id="arrays" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal text-green-900 mb-5">Arrays</h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('arrays')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              An array is a collection of items stored at contiguous memory
+              locations. It is one of the simplest and most widely used data
+              structures.
+            </p>
+            <p class="mt-2">
+              <strong>Key Operations:</strong> Insertion, Deletion, Searching,
+              Sorting, and Traversal.
+            </p>
+            <p class="mt-2">
+              <strong>Example:</strong> Storing a list of numbers or names.
+            </p>
+          </div>
+        </div>
+
+        <!-- Linked Lists -->
+        <div id="linked-lists" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal text-green-900 mb-5">
+              Linked Lists
+            </h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('linked-lists')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              A linked list is a linear data structure where each element
+              (called a node) contains data and a reference (or pointer) to the
+              next node in the sequence.
+            </p>
+            <p class="mt-2">
+              <strong>Types:</strong> Singly Linked List, Doubly Linked List,
+              and Circular Linked List.
+            </p>
+            <p class="mt-2">
+              <strong>Key Operations:</strong> Insertion, Deletion, Traversal,
+              and Reversal.
+            </p>
+          </div>
+        </div>
+
+        <div id="sorting" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal mb-5">Sorting Algorithms</h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('sorting')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              Sorting algorithms are used to rearrange a given array or list of
+              elements according to a comparison operator. Common sorting
+              algorithms include:
+            </p>
+            <ul class="list-disc pl-5 mt-2">
+              <li><strong>Bubble Sort:</strong> Simple but inefficient.</li>
+              <li>
+                <strong>Selection Sort:</strong> Selects the smallest element
+                and swaps it.
+              </li>
+              <li>
+                <strong>Insertion Sort:</strong> Builds the final sorted array
+                one item at a time.
+              </li>
+              <li><strong>Merge Sort:</strong> Divide and conquer approach.</li>
+              <li><strong>Quick Sort:</strong> Efficient and widely used.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Stacks and Queues -->
+        <div id="stacks-queues" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal text-green-900 mb-5">
+              Stacks and Queues
+            </h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('stacks-queues')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              <strong>Stack:</strong> A Last-In-First-Out (LIFO) data structure.
+              Elements are added and removed from the top.
+            </p>
+            <p class="mt-2">
+              <strong>Queue:</strong> A First-In-First-Out (FIFO) data
+              structure. Elements are added at the rear and removed from the
+              front.
+            </p>
+            <p class="mt-2">
+              <strong>Applications:</strong> Stack is used in function calls,
+              while Queue is used in scheduling and buffering.
+            </p>
+          </div>
+        </div>
+
+        <div id="trees" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal text-green-900 mb-5">Trees</h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('trees')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              A tree is a hierarchical data structure consisting of nodes, where
+              each node has a parent and zero or more children.
+            </p>
+            <p class="mt-2">
+              <strong>Types:</strong> Binary Tree, Binary Search Tree (BST), AVL
+              Tree, and Heap.
+            </p>
+            <p class="mt-2">
+              <strong>Key Operations:</strong> Insertion, Deletion, Traversal
+              (Inorder, Preorder, Postorder), and Searching.
+            </p>
+          </div>
+        </div>
+
+        <!-- Graphs -->
+        <div id="graphs" class="mb-8">
+          <div class="flex justify-between items-center">
+            <h1 class="text-3xl font-normal text-green-900 mb-5">Graphs</h1>
+            <button
+              class="bookmark-btn bg-green-500 rounded-full"
+              onclick="bookmarkSection('graphs')"
+            >
+              Bookmark
+            </button>
+          </div>
+          <div class="bg-gray-100 p-4 rounded-lg">
+            <p class="mt-2">
+              A graph is a non-linear data structure consisting of nodes
+              (vertices) and edges that connect these nodes.
+            </p>
+            <p class="mt-2">
+              <strong>Types:</strong> Directed Graph, Undirected Graph, Weighted
+              Graph, and Unweighted Graph.
+            </p>
+            <p class="mt-2">
+              <strong>Key Algorithms:</strong> Breadth-First Search (BFS),
+              Depth-First Search (DFS), Dijkstra's Algorithm, and Kruskal's
+              Algorithm.
+            </p>
+          </div>
+        </div>
+
+        <div id="bookmarks" class="mb-8">
+          <h1 class="text-3xl font-bold mb-5 rounded-3xl">My Bookmarks</h1>
+          <div class="bg-gray-100 p-4 rounded-xl">
+            <ul id="bookmark-list" class="list-disc pl-5"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function bookmarkSection(sectionId) {
+        let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+        if (!bookmarks.includes(sectionId)) {
+          bookmarks.push(sectionId);
+          localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+          alert(`Bookmarked: ${sectionId}`);
+          displayBookmarks();
+        } else {
+          alert("Already bookmarked!");
+        }
+      }
+
+      function displayBookmarks() {
+        let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+        let bookmarkList = document.getElementById("bookmark-list");
+        bookmarkList.innerHTML = "";
+
+        bookmarks.forEach((sectionId) => {
+          let listItem = document.createElement("li");
+          let link = document.createElement("a");
+          link.href = `#${sectionId}`;
+          link.textContent = sectionId.replace(/-/g, " ");
+          link.className = "text-blue-600 hover:underline";
+          listItem.appendChild(link);
+          bookmarkList.appendChild(listItem);
+        });
+      }
+
+      window.onload = displayBookmarks;
+    </script>
+  </body>
+</html>
